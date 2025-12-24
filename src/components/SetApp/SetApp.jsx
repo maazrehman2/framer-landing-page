@@ -108,12 +108,9 @@ const PlanSection = () => {
 const SetappSection = () => {
   return (
     <section className="bg-white relative py-20 font-avenir pb-[15rem]">
-    {/* TOP FLOATING */}
-    <div className="absolute top-[-25rem] left-1/2 -translate-x-1/2 w-full max-w-[1335px] pb-[30rem]">
-      <MusicSection />
-    </div>
-
-
+      <div className="absolute top-[-25rem] left-1/2 -translate-x-1/2 w-full max-w-[1335px] pb-[30rem]">
+        <MusicSection />
+      </div>
 
       <div className="max-w-[1355px] mx-auto px-6">
         <div className="mt-[20rem]">
@@ -199,7 +196,7 @@ const SetappSection = () => {
           />
         </div>
 
-        <div className="absolute bottom-[-30rem] left-1/2 -translate-x-1/2 w-full max-w-[1335px]">
+        <div className="absolute bottom-[-30rem] left-1/2 -translate-x-1/2 w-[90%] max-w-[1335px]">
           <PlanSection />
         </div>
       </div>
