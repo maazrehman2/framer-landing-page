@@ -73,44 +73,6 @@ const HeroSection = () => {
         </p>
       </motion.div>
 
-      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl pointer-events-none">
-        {[
-          { src: "hero-section/work.svg", top: 120, left: 60, w: 163, rotate: -12 },
-          { src: "hero-section/macpaw.svg", top: 250, left: 70, w: 48 },
-          { src: "hero-section/pdf.svg", top: 250, left: 140, w: 132, rotate: 18 },
-          { src: "hero-section/teamwork.svg", top: 420, left: 80, w: 217, rotate: -8 },
-          { src: "hero-section/secure.svg", top: 510, left: 60, w: 180, rotate: 12 },
-        ].map((img, idx) => (
-          <motion.img
-            key={idx}
-            src={img.src}
-            className={`absolute top-[${img.top}px] left-[${img.left}px] w-[${img.w}px]`}
-            style={{ rotate: img.rotate ? `${img.rotate}deg` : 0 }}
-            variants={floatVariants}
-            animate="float"
-          />
-        ))}
-      </div> */}
-
-      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl pointer-events-none">
-        {[
-          { src: "hero-section/wifi.svg", top: 100, right: 70, w: 190, rotate: 1 },
-          { src: "hero-section/plan.svg", top: 160, right: 170, w: 160, rotate: -12, z: 20 },
-          { src: "hero-section/converter.svg", top: 280, right: 80, w: 145, z: 10 },
-          { src: "hero-section/manage.svg", top: 380, right: 120, w: 220, rotate: 2 },
-          { src: "hero-section/code.svg", top: 480, right: 140, w: 142, rotate: 1 },
-        ].map((img, idx) => (
-          <motion.img
-            key={idx}
-            src={img.src}
-            className={`absolute top-[${img.top}px] right-[${img.right}px] w-[${img.w}px] z-[${img.z || 0}]`}
-            style={{ rotate: img.rotate ? `${img.rotate}deg` : 0 }}
-            variants={floatVariants}
-            animate="float"
-          />
-        ))}
-      </div> */}
-
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl pointer-events-none">
         {[
           {
