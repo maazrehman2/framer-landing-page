@@ -32,62 +32,10 @@ const TestimonialCard = ({ text, name, handle, bg, icon }) => {
   );
 };
 
-// const MusicSection = () => {
-//   return (
-//     <motion.div
-//       className="bg-[#7B4D73] relative rounded-[20px] h-[720px] overflow-hidden flex items-center"
-//       initial={{ opacity: 0, scale: 0.95 }}
-//       whileInView={{ opacity: 1, scale: 1 }}
-//       transition={{ duration: 0.8 }}
-//       viewport={{ once: true }}
-//     >
-//       <div className="z-10 max-w-[420px] ml-16 text-white">
-//         <p className="text-[18px] leading-[32.04px] opacity-90">
-//           Musicians like Jason use Setapp to push the limits of their
-//           creativity, dancing through task for more time to play.
-//         </p>
-//         <p className="mt-4 text-sm opacity-70">Jason Stacz</p>
-//       </div>
-//       <div className="absolute right-3 top-10 flex justify-end">
-//         <img src="/SetApp/right-arrow.svg" alt="left-arrow" />
-//       </div>
-//       <div className="absolute right-12 top-10 flex justify-end">
-//         <img src="/SetApp/left-arrow.svg" alt="right-arrow" />
-//       </div>
-
-//       <div className="absolute right-0 bottom-0 h-full flex items-end pr-[90px]">
-//         <img
-//           src="/SetApp/man-image.svg"
-//           alt="Jason"
-//           className="h-[95%] object-contain"
-//         />
-//       </div>
-
-//       <img
-//         src="/SetApp/play-btn.svg"
-//         alt="play-btn"
-//         className="absolute left-10 bottom-20 w-12 h-12 bg-white rounded-full flex items-center justify-center z-10"
-//       />
-//     </motion.div>
-//   );
-// };
-
-
 const MusicSection = () => {
   return (
     <motion.div
-      className="
-        bg-[#7B4D73]
-        relative
-        rounded-[20px]
-        h-[720px]
-        overflow-hidden
-        flex
-        items-center
-        w-full
-        max-w-[1335px]
-        mx-auto
-      "
+      className="bg-[#7B4D73] relative rounded-[20px] h-[720px] overflow-hidden flex items-center"
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
@@ -136,7 +84,8 @@ const PlanSection = () => {
       viewport={{ once: true }}
     >
       <img src="/SetApp/company-logo.svg" alt="firm-white-logo" />
-      <div className="pr-[378px] my-[2rem]">
+
+      <div className="max-w-[900px] pr-[378px] my-[2rem]">
         <h3 className="text-[46px] font-semibold text-black tracking-[1.5px]">
           Superpowers starting $9.99/month.
         </h3>
@@ -159,9 +108,12 @@ const PlanSection = () => {
 const SetappSection = () => {
   return (
     <section className="bg-white relative py-20 font-avenir pb-[15rem]">
-      <div className="absolute top-[-25rem] left-1/2 -translate-x-1/2 w-[1335px] pb-[30rem]">
-        <MusicSection />
-      </div>
+    {/* TOP FLOATING */}
+    <div className="absolute top-[-25rem] left-1/2 -translate-x-1/2 w-full max-w-[1335px] pb-[30rem]">
+      <MusicSection />
+    </div>
+
+
 
       <div className="max-w-[1355px] mx-auto px-6">
         <div className="mt-[20rem]">
@@ -247,7 +199,7 @@ const SetappSection = () => {
           />
         </div>
 
-        <div className="absolute bottom-[-30rem] left-1/2 -translate-x-1/2 w-[1335px]">
+        <div className="absolute bottom-[-30rem] left-1/2 -translate-x-1/2 w-full max-w-[1335px]">
           <PlanSection />
         </div>
       </div>
