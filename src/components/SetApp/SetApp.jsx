@@ -35,7 +35,7 @@ const TestimonialCard = ({ text, name, handle, bg, icon }) => {
 const MusicSection = () => {
   return (
     <motion.div
-      className="bg-[#7B4D73] relative rounded-[20px] h-[720px] overflow-hidden flex items-center"
+      className="bg-[#7B4D73] relative rounded-[20px] h-[720px] overflow-hidden flex items-center w-full max-w-[1335px] mx-auto"
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
